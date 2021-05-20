@@ -1,0 +1,33 @@
+
+body {
+    background-color: pink
+    }
+
+
+ p {
+    color: blue;
+    }
+
+h3  {
+    color: purple;
+    font-size: 2rem;
+    }
+
+h4 {
+    color: purple;
+    font-size: 1rem;
+    }
+.one{
+    color: blue;
+    font-size: 1rem;
+    }
+
+.two {
+    color: blue;
+    font-size: 1rem;
+    }
+
+.three {
+    color: blue;
+    font-size: 1rem;
+    }
