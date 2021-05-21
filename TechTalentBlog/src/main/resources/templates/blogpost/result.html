@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Blog Site</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+<!--      <link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+<div class="container">
+<h3>Blog Post Form</h3>
+<p>Thank you for your submission!</p>
+<h4>Blog Post:</h4>
+<p th:text="${title}" />
+<p th:text="${author}" />
+<p th:text="${blogEntry}" />
+<a href="/">Go back to sign up page</a>
+</div>
+</body>
+</html>
