@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Edit Blog Post</title>
+  <div th:replace="/fragments/styling :: head-style"></div>
+
+</head>
+<body>
+<div th:replace="/fragments/navbar :: navbar"></div>
+<div class="container">
+  <div class="header">
+    Edit Blog Post
+  </div>
+  <form action="#" th:action="@{~/blogposts/update/{id}(id=${blogPost.getId()})}" th:object="${blogPost}" method="post">
+
+    <div class="form-group">
+      <input type="text" class="form-control"  th:field="*{title}" />
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control"  th:field="*{author}" />
+    </div>
+
+    <div class="form-group">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" th:field="*{blogEntry}"></textarea>
+    </div>
+
+    <button class="btn btn-primary">Submit Your Post</button>
+  </form>
+</div>
+
+<!--    <div class="container">-->
+<!--        <h1>Edit Blog Post</h1>-->
+
+<!--        <form action="#" th:action="@{~/blogpost/update/{id}(id=${blogPost.getId()})}" th:object="${blogPost}" method="POST">-->
+<!--            <label for="blogTitle">Title:</label>-->
+<!--            <input id="blogTitle" type="text" name="blogTitle" th:field="*{title}" />-->
+
+<!--            <label for="blogAuthor">Author:</label>-->
+<!--            <input id ="blogAuthor" type="text" name="blogAuthor" th:field="*{author}" />-->
+
+<!--            <div class="form-group">-->
+<!--                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Blog Entry" th:field="*{blogEntry}"></textarea>-->
+<!--            </div>-->
+
+<!--            <button type="submit" class="btn btn-success">Submit Your Blog</button>-->
+<!--        </form>-->
+
+<!--    </div>-->
+
+
+<div th:replace="/fragments/styling :: body-links"></div>
+</body>
+</html>
